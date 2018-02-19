@@ -3,6 +3,7 @@
 GOTO :CMDSCRIPT
 ::CMDLITERAL
 
+cd "$(dirname "$0")"
 sh debloat.bat
 sh install.bat
 sh setup.bat
