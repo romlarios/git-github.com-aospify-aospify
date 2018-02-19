@@ -1,2 +1,20 @@
 # Auto detect text files and perform LF normalization
 * text eol lf
+
+*.dll binary
+*.pyc binary
+*.bson binary
+*.dylib binary
+*.so binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.tiff binary
+*.wav binary
+*.pcm binary
+*.ogg binary
+*.mp3 binary
+*.m4a binary
+*.mp4 binary
+*.apk binary
