@@ -240,4 +240,3 @@ com.google.android.music
 com.google.android.apps.maps
 com.google.android.apps.photos
 com.samsung.knox.securefolder
- 
