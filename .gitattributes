@@ -1,8 +1,9 @@
-*.* text eol=lf
+# Auto detect text files and perform LF normalization
+* text eol lf
+# batch override
+*.bat text eol=crlf
 
-/bin/* binary
 *.dll binary
-*.exe binary
 *.pyc binary
 *.bson binary
 *.dylib binary
