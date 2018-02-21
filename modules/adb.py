@@ -20,7 +20,7 @@ def exe(command):
 	# os.system('./%s %s' % (_ADB_PATH, command))
 	
 	abs_path = os.path.abspath(_ADB_PATH)
-	os.system('%s %s' % (abs_path, command))
+	os.system('{} {}'.format(abs_path, command))
 	
 	# os.system('adb %s' % command)
 
@@ -33,17 +33,17 @@ def start():
 # adb shell
 def shell(command):
 	# TODO: silence output of shell
-	exe('shell %s' % command)
+	exe('shell ' + command)
 	
 def push(a, b):
-	exe('push %s %s' % (a, b))
+	exe('push {} {}'.format(a, b))
 	
 def install(pkg):
-	exe('install %s' % pkg) 
+	exe('install ' + pkg) 
 	
 def mkdir(dir):
-	shell('mkdir %s' % dir)
+	shell('mkdir ' + dir)
 	
 def rmdir(dir):
-	shell('rm -rf %s' % dir)
+	shell('rm -rf ' + dir)
 	
