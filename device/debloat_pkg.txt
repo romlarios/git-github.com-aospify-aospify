@@ -89,7 +89,6 @@ com.android.providers.partnerbookmarks
 com.samsung.android.keyguardwallpaperupdator
 com.samsung.android.beaconmanager
 com.sec.enterprise.mdm.services.simpin
-com.amazon.mShop.android
 com.facebook.system
 com.samsung.android.oneconnect
 com.samsung.android.fmm
@@ -183,9 +182,7 @@ com.skms.android.agent
 com.trustonic.tuiservice
 com.wssnps
 org.simalliance.openmobileapi.service
-com.instagram.android
 com.facebook.orca
-com.amazon.mShop.android.shopping
 com.sec.vowifispg
 com.vzw.hss.myverizon
 com.verizon.mips.services
