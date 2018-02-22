@@ -166,7 +166,6 @@ com.sec.android.app.launcher
 com.sec.android.app.safetyassurance
 com.sec.android.app.samsungapps
 com.sec.android.app.shealth
-com.sec.android.app.soundalive
 com.sec.android.diagmonagent
 com.sec.android.service.health
 com.sec.android.soagent
