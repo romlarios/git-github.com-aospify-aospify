@@ -60,7 +60,6 @@ com.android.printspooler
 com.samsung.android.hmt.vrsvc
 com.samsung.android.bixby.es.globalaction
 com.samsung.storyservice
-com.android.dreams.basic
 com.samsung.android.app.talkback
 com.samsung.android.game.gametools
 com.samsung.android.service.peoplestripe
