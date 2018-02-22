@@ -102,7 +102,6 @@ com.samsung.android.spayfw
 com.samsung.android.svoice
 com.samsung.android.visioncloudagent
 com.samsung.android.spay
-com.samsung.android.app.spage
 com.sec.android.emergencylauncher
 com.sec.hearingadjust
 com.samsung.android.dlp.service
@@ -231,9 +230,5 @@ com.samsung.tmovvm
 com.comcast.modesto.vvm.client
 com.smithmicro.netwise.director.comcast.oem
 com.samsung.vvm.tfn
-com.google.android.apps.docs
 com.facebook.services
-com.google.android.music
-com.google.android.apps.maps
-com.google.android.apps.photos
 com.samsung.knox.securefolder
