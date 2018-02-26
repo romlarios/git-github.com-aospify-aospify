@@ -253,3 +253,4 @@ com.samsung.android.allshare.service.mediashare
 com.sec.android.app.applinker
 com.sec.android.app.desktoplauncher
 com.sec.android.desktopmode.uiservice
+com.samsung.android.sm.devicesecurity
