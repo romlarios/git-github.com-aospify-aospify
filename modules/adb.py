@@ -1,11 +1,11 @@
 import os
 
 # TODO: support unix
-_ADB_PATH = 'bin/adb.exe'
+ADB_PATH = 'bin/adb.exe'
 
 # private standalone bin check
 def _adb_bin_exists():
-	return (os.path.isfile(_ADB_PATH))
+	return os.path.isfile(ADB_PATH)
 	
 # handle bin missing; call from main.py
 def adb_check():
@@ -17,9 +17,9 @@ def adb_check():
 # shell execution
 def exe(command):
 	# TODO: support unix and implement bin utilization
-	# os.system('./%s %s' % (_ADB_PATH, command))
+	# os.system('./%s %s' % (ADB_PATH, command))
 	
-	abs_path = os.path.abspath(_ADB_PATH)
+	abs_path = os.path.abspath(ADB_PATH)
 	os.system('{} {}'.format(abs_path, command))
 	
 	# os.system('adb %s' % command)
