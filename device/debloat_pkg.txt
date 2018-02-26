@@ -233,3 +233,4 @@ com.samsung.knox.securefolder
 com.samsung.android.knox.containeragent
 com.samsung.android.themestore
 com.samsung.android.themecenter
+com.sec.android.app.soundalive
