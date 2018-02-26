@@ -16,7 +16,7 @@ def debloat():
 	
 	# push script and list
 	adb.push(os.path.abspath(SCRIPT_DEBLOAT), AOSPIFY_LOCAL)
-	adb.push(os.path.abspath(SCRIPT_DEBLOAT_PKG), AOSPIFY_LOCAL)
+	adb.push(os.path.abspath(LIST_DEBLOAT_PKG), AOSPIFY_LOCAL)
 	
 	# give it +x perms
 	adb.shell('chmod +x ' + AOSPIFY_LOCAL + 'debloat.sh')

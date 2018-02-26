@@ -14,8 +14,9 @@ def splash():
 	print('''AOSPify tytydraco; kdrag0n''')
 
 def main():
+	# kinda confused what this does
 	os.chdir(os.path.dirname(os.path.realpath(__file__)))
-	print(os.getcwd())
+	
 	splash()
 	adb.adb_check()
 	debloat.debloat()
