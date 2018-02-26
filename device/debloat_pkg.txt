@@ -230,3 +230,6 @@ com.smithmicro.netwise.director.comcast.oem
 com.samsung.vvm.tfn
 com.facebook.services
 com.samsung.knox.securefolder
+com.samsung.android.knox.containeragent
+com.samsung.android.themestore
+com.samsung.android.themecenter
