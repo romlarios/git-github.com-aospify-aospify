@@ -1,5 +1,6 @@
 #!/system/bin/sh
 
+cd "$(dirname "$0")"
 echo 'Disabling packages...'
 
 for pkg in $(cat debloat_pkg.txt); do

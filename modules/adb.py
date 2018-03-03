@@ -2,7 +2,7 @@ import os
 import sys
 
 ADB_PATH = os.path.abspath('bin/' + sys.platform + '/adb')
-if sys.platform == 'windows':
+if sys.platform == 'win32':
     ADB_PATH += '.exe'
 
 # handle bin missing; call from main.py

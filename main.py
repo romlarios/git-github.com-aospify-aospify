@@ -27,8 +27,8 @@ def main():
 	splash()
 	adb.adb_check()
 	debloat.debloat()
-	install.install()
-	setup.setup()
+#	install.install()
+#	setup.setup()
 
 if __name__ == '__main__':
 	main()
