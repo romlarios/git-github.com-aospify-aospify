@@ -5,7 +5,6 @@ ADB_PATH = os.path.abspath('bin/' + sys.platform + '/adb')
 if sys.platform == 'windows':
     ADB_PATH += '.exe'
 
->>>>>>> parent of 5ecb839... undo everything @kdrag0n did because he broke stuff and didnt use good syntax
 # handle bin missing; call from main.py
 def adb_check():
 	if not os.path.isfile(ADB_PATH):

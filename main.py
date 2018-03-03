@@ -24,11 +24,11 @@ Made by: tytydraco, kdrag0n''')
 def main():
 	os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
-        splash()
+	splash()
 	adb.adb_check()
 	debloat.debloat()
 	install.install()
 	setup.setup()
 
 if __name__ == '__main__':
-    main()
+	main()
