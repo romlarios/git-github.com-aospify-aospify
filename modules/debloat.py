@@ -35,8 +35,8 @@ def rebloat():
 	adb.mkdir(DEVICE_DIR)
 	
 	# push script and list
-	adb.push(SCRIPT_DEBLOAT, DEVICE_DIR)
-	adb.push(PKG_LIST, DEVICE_DIR)
+	adb.push(SCRIPT_REBLOAT, DEVICE_DIR)
+	adb.push(PKG_DEBLOAT_LIST, DEVICE_DIR)
 	
 	# run script
 	adb.shell('sh ' + DEVICE_DIR + 'rebloat.sh')
