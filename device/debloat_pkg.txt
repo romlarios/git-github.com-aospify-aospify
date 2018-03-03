@@ -361,3 +361,4 @@ com.samsung.android.coreapps
 com.samsung.android.bixby.agent.dummy
 com.samsung.android.app.omcagent
 com.samsung.android.SettingsReceiver
+com.sec.android.omc
