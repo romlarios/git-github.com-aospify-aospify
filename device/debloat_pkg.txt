@@ -322,7 +322,6 @@ com.samsung.usbyod
 com.samsung.android.rubin.app
 com.samsung.ucs.agent.boot
 com.samsung.android.intelligenceservice2
-com.samsung.android.MtpApplication
 com.samsung.android.app.selfmotionpanoramaviewer
 com.samsung.android.securitylogagent
 com.samsung.android.app.assistantmenu
