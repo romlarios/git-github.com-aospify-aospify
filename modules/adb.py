@@ -1,28 +1,20 @@
 import os
+import sys
 
-# TODO: support unix
-ADB_PATH = 'bin/adb.exe'
+ADB_PATH = os.path.abspath('bin/' + sys.platform + '/adb')
+if sys.platform == 'windows':
+    ADB_PATH += '.exe'
 
-# private standalone bin check
-def _adb_bin_exists():
-	return os.path.isfile(ADB_PATH)
-	
 # handle bin missing; call from main.py
 def adb_check():
-	if not _adb_bin_exists:
+	if not os.path.isfile(ADB_PATH):
 		print('[!] ADB binary not found. Abort.')
 		exit(1)
 	print('[*] ADB check passed')
 
 # shell execution
 def exe(command):
-	# TODO: support unix and implement bin utilization
-	# os.system('./%s %s' % (ADB_PATH, command))
-	
-	abs_path = os.path.abspath(ADB_PATH)
-	os.system('{} {}'.format(abs_path, command))
-	
-	# os.system('adb %s' % command)
+	os.system(ADB_PATH + ' ' + command)
 
 def kill():
 	exe('kill-server')
@@ -46,4 +38,3 @@ def mkdir(dir):
 	
 def rmdir(dir):
 	shell('rm -rf ' + dir)
-	
