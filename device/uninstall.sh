@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 cd "$(dirname "$0")"
-echo 'Disabling packages...'
+echo 'Uninstalling packages...'
 
 for pkg in $(cat uninstall_pkg.txt); do
 	pm uninstall --user 0 -k $pkg >/dev/null 2>&1
