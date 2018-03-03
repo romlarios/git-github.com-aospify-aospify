@@ -12,5 +12,5 @@ APK_EQ = 'apk/Equalizer.apk'
 def install():
 	adb.install(APK_CAMERA)
 	adb.install(APK_LAUNCHER)
-	adb.install(APK_LAUNCHER)
 	adb.install(APK_EQ)
+	adb.install(APK_PHONE)
