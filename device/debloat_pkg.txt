@@ -287,7 +287,6 @@ com.sec.android.app.factorykeystring
 com.sec.android.emergencymode.service
 com.sec.android.app.wlantest
 com.sec.android.daemonapp
-com.sec.ims
 com.sec.sve
 com.sec.enterprise.knox.attestation
 com.sec.android.provider.badge
@@ -302,7 +301,6 @@ com.sec.android.preloadinstaller
 com.sec.providers.assisteddialing
 com.sec.android.inputmethod
 com.sec.android.RilServiceModeApp
-com.sec.android.app.simsettingmgr
 com.sec.imslogger
 com.sec.android.app.apex
 com.sec.android.app.ringtoneBR
@@ -313,7 +311,6 @@ com.sec.android.app.setupwizard
 com.sec.downloadablekeystore
 com.sec.android.provider.emergencymode
 com.sec.android.app.applinker
-com.samsung.sec.android.application.csc
 com.sec.hiddenmenu
 com.samsung.android.provider.shootingmodeprovider
 com.samsung.android.incallui
@@ -347,14 +344,12 @@ com.samsung.android.allshare.service.fileshare
 com.samsung.android.universalswitch
 com.samsung.android.authfw
 com.samsung.android.app.accesscontrol
-com.samsung.networkui
 com.samsung.android.sm.policy
 com.samsung.android.networkdiagnostic
 com.samsung.ucs.agent.ese
 com.samsung.InputEventApp
 com.samsung.tmowfc.wfcpref
 com.samsung.ipservice
-com.samsung.sec.android.application.csc
 com.samsung.android.coreapps
 com.samsung.android.bixby.agent.dummy
 com.samsung.android.app.omcagent
