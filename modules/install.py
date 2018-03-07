@@ -1,5 +1,5 @@
 import sys
-from . import adb
+from modules import adb
 
 APK_CAMERA = 'apk/Camera.apk'
 APK_LAUNCHER = 'apk/Launcher.apk'
