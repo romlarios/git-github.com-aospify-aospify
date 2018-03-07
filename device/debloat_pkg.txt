@@ -359,3 +359,5 @@ com.att.iqi
 com.asurion.android.protech.att
 com.locationlabs.cni.att
 com.google.android.apps.maps
+com.samsung.android.themestore
+com.samsung.android.themecenter
