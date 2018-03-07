@@ -6,7 +6,6 @@ com.android.carrierdefaultapp
 com.android.dreams.phototable
 com.android.printspooler
 com.android.providers.partnerbookmarks
-com.android.providers.userdictionary
 com.android.sharedstoragebackup
 com.android.stk
 com.android.wallpapercropper
