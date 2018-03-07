@@ -1,7 +1,5 @@
-import os, sys
-
-sys.path.insert(0, 'modules')
-import adb
+import os
+import .adb
 
 # paths are relative to main.py
 DEVICE_DIR = '/sdcard/aospify/'
