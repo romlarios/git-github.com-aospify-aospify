@@ -1,4 +1,3 @@
-import os
 from . import adb
 
 # paths are relative to main.py

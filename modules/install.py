@@ -1,4 +1,3 @@
-import sys
 from . import adb
 
 APK_CAMERA = 'apk/Camera.apk'

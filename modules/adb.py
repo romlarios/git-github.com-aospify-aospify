@@ -4,7 +4,7 @@ import subprocess
 
 ADB_PATH = os.path.abspath('bin/' + sys.platform + '/adb')
 if sys.platform == 'win32':
-    ADB_PATH += '.exe'
+	ADB_PATH += '.exe'
 
 # handle bin missing; call from main.py
 def adb_check():
@@ -13,17 +13,16 @@ def adb_check():
 		sys.exit(1)
 	print('[*] ADB check passed')
 
-# shell execution
+# command execution
 def exe(command, *arguments):
 	subprocess.check_output(ADB_PATH, command, *arguments)
 
 def kill():
 	return exe('kill-server')
-	
+
 def start():
 	return exe('start-server')
-	
-# adb shell
+
 def shell(command):
 	return exe('shell', command)
 	
