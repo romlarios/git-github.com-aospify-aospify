@@ -4,8 +4,8 @@ A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
 
 # Instructions
 - Make sure you have `adb` from the Android Platform Tools installed and in your `PATH`.
-- Make sure you have enabled ADB from Developer Options on your device.
-- Make sure you have a backup keyboard installed (Gboard recommended).
+- Make sure you have enabled USB Debugging from Developer Options on your device.
+- (important) Make sure you have a backup keyboard installed (Gboard recommended).
 ## After Process
 - Make sure you set your default dialer to Phone in Settings -> Apps -> More -> Default Apps -> Phone.
 - Make sure you grant Phone app all permissions it asks for.
