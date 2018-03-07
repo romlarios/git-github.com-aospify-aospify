@@ -1,7 +1,5 @@
 import sys
-
-sys.path.insert(0, 'modules')
-import adb
+from . import adb
 
 COMM_CAM_DOUBLE_TAP = 'settings put system double_tab_launch_component com.google.android.GoogleCamera/com.android.camera.CameraLauncher'
 #COMM_IMMERSIVE_FULL = 'settings put global policy_control "immersive.full=*"'

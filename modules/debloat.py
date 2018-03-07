@@ -1,5 +1,5 @@
 import os
-from modules import adb
+from . import adb
 
 # paths are relative to main.py
 DEVICE_DIR = '/sdcard/aospify/'
