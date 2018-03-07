@@ -1,4 +1,6 @@
-import os, sys
+import os
+import sys
+import subprocess
 
 ADB_PATH = os.path.abspath('bin/' + sys.platform + '/adb')
 if sys.platform == 'win32':
@@ -12,28 +14,27 @@ def adb_check():
 	print('[*] ADB check passed')
 
 # shell execution
-def exe(command):
-	os.system(ADB_PATH + ' ' + command)
+def exe(command, *arguments):
+	subprocess.check_output(ADB_PATH, command, *arguments)
 
 def kill():
-	exe('kill-server')
+	return exe('kill-server')
 	
 def start():
-	exe('start-server')
+	return exe('start-server')
 	
 # adb shell
 def shell(command):
-	# TODO: silence output of shell
-	exe('shell ' + command)
+	return exe('shell', command)
 	
 def push(a, b):
-	exe('push {} {}'.format(a, b))
+	return exe('push', a, b)
 	
 def install(pkg):
-	exe('install ' + pkg) 
+	return exe('install', pkg) 
 	
 def mkdir(dir):
-	shell('mkdir ' + dir)
+	return shell('mkdir ' + dir)
 	
 def rmdir(dir):
-	shell('rm -rf ' + dir)
+	return shell('rm -rf ' + dir)
