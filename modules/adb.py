@@ -1,5 +1,4 @@
-import os
-import sys
+import os, sys
 
 ADB_PATH = os.path.abspath('bin/' + sys.platform + '/adb')
 if sys.platform == 'win32':
@@ -9,7 +8,7 @@ if sys.platform == 'win32':
 def adb_check():
 	if not os.path.isfile(ADB_PATH):
 		print('[!] ADB binary not found. Abort.')
-		exit(1)
+		sys.exit(1)
 	print('[*] ADB check passed')
 
 # shell execution

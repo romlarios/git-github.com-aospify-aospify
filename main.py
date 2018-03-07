@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import os
+import os, sys
 import modules as mod
 
 def splash():
@@ -16,7 +16,13 @@ Samsung Root-less AOSP Experience
 Made by: tytydraco, kdrag0n''')
 
 def main():
-	os.chdir(os.path.dirname(os.path.realpath(__file__)))
+	if getattr(sys, 'frozen', False):
+		# frozen
+		os.chdir(os.path.dirname(os.path.realpath(sys.executable)))
+	else:
+		# unfrozen
+		os.chdir(os.path.dirname(os.path.realpath(__file__)))
+	
 
 	splash()
 	mod.adb_check()
