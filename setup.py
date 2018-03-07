@@ -1,4 +1,4 @@
-#!d:\programs\python\python36-32\python.exe
+#!/usr/bin/env python3
 from cx_Freeze import setup, Executable
 
 import os.path
