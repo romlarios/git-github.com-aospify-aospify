@@ -4,7 +4,6 @@ com.android.backupconfirm
 com.android.bluetoothmidiservice
 com.android.carrierdefaultapp
 com.android.dreams.phototable
-com.android.printspooler
 com.android.providers.partnerbookmarks
 com.android.sharedstoragebackup
 com.android.stk
@@ -359,3 +358,10 @@ com.asurion.android.protech.att
 com.locationlabs.cni.att
 com.google.android.apps.maps
 com.samsung.android.themestore
+com.google.android.youtube
+com.enhance.gameservice
+com.android.managedprovisioning
+com.google.android.feedback
+com.samsung.android.app.color
+com.sec.ims
+com.sec.imsservice
