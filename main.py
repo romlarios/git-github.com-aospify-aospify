@@ -36,12 +36,12 @@ def main():
 	# apply settings AFTER reboot and detect plugged in
 	mod.reboot()
 	mod.wait()
-	time.sleep(3)
+	time.sleep(5)
 
 	mod.settings()
 	mod.reboot()
 
-	print('[*] Done! Enjoy your faster phone.')
+	print('[*] Done! Enjoy your better phone.')
 
 
 if __name__ == '__main__':
