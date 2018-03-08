@@ -365,3 +365,5 @@ com.google.android.feedback
 com.samsung.android.app.color
 com.sec.ims
 com.sec.imsservice
+com.samsung.android.lool
+com.sec.android.app.easylauncher
