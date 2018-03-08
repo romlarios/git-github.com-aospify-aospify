@@ -51,6 +51,9 @@ def shell(command):
 def reboot():
 	return exe('reboot')
 
+def wait():
+	return exe('wait-for-device')
+
 def push(a, b):
 	return exe('push', a, b)
 

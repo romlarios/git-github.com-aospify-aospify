@@ -32,6 +32,7 @@ def main():
 	mod.install()
 	
 	adb.reboot()
+	adb.wait()
 	
 	# TODO: apply settings AFTER reboot
 	
