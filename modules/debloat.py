@@ -21,6 +21,9 @@ def debloat():
 	enabled = enabled.split('\n')
 	debloat = set(debloat).intersection(enabled)
 
+	if len(debloat) == 0:
+		return
+
 	# uninstall packages
 	for pkg in tqdm(debloat, desc='Debloating'):
 		adb.shell('pm uninstall --user 0 ' + pkg)

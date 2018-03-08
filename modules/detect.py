@@ -16,9 +16,9 @@ def model():
 
 	name = adb.shell('getprop ro.product.device').strip('\r\n')
 
-	if name in ['dreamqlte', 'dream2qlte', 'dreamqltesq', 'dream2qltesq']:
+	if name in ['dreamqlte', 'dream2qlte', 'dreamqltesq', 'dream2qltesq', 'greatqlte', 'greatqltesq']:
 		_model = DEVICE_SNAPDRAGON
-	elif name in ['dreamlte', 'dream2lte']:
+	elif name in ['dreamlte', 'dream2lte', 'greatlte']:
 		_model = DEVICE_EXYNOS
 	else:
 		_model = DEVICE_UNKNOWN

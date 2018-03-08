@@ -49,7 +49,7 @@ def shell(command):
 	return exe('shell', command)
 
 def reboot():
-	print('[*] Rebooting device')
+	print('[*] Rebooting device. DO NOT UNPLUG!')
 	return exe('reboot')
 
 def wait():
