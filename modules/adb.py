@@ -49,6 +49,7 @@ def shell(command):
 	return exe('shell', command)
 
 def reboot():
+	print('[*] Rebooting device')
 	return exe('reboot')
 
 def wait():

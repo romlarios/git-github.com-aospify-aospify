@@ -10,6 +10,7 @@ APK_OVERLAY_SYSTEMUI = 'apk/Overlay_SystemUI.apk'
 
 # install replacement APKs
 def install():
+	print('[*] Installing apps')
 	chipset = detect.model()
 
 	if chipset == detect.DEVICE_EXYNOS:
@@ -20,6 +21,6 @@ def install():
 	adb.install(APK_LAUNCHER)
 	adb.install(APK_EQ)
 	adb.install(APK_PHONE)
-	
+
 	adb.install(APK_OVERLAY_SETTINGS)
 	adb.install(APK_OVERLAY_SYSTEMUI)

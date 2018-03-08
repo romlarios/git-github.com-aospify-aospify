@@ -10,6 +10,7 @@ CMD_QS_LAYOUT = 'settings put secure qs_tile_layout 3'
 CMD_QS_QQS = 'settings put secure sysui_qqs_count 6'
 
 def settings():
+	print('[*] Finishing up')
 	# setup overlays first
 	adb.shell(CMD_ENABLE_OVERLAY_SETTINGS)
 	adb.shell(CMD_ENABLE_OVERLAY_SYSTEMUI)

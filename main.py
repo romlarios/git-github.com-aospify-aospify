@@ -41,6 +41,8 @@ def main():
 	mod.settings()
 	mod.reboot()
 
+	print('[*] Done! Enjoy your faster phone.')
+
 
 if __name__ == '__main__':
 	main()
