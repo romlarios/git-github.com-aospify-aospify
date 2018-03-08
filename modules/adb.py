@@ -25,15 +25,15 @@ def start():
 
 def shell(command):
 	return exe('shell', command)
-	
+
 def push(a, b):
 	return exe('push', a, b)
-	
+
 def install(pkg):
-	return exe('install', pkg) 
-	
+	return exe('install', pkg)
+
 def mkdir(dir):
 	return shell('mkdir ' + dir)
-	
+
 def rmdir(dir):
 	return shell('rm -rf ' + dir)

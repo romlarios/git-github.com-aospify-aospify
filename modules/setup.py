@@ -1,4 +1,3 @@
-import sys
 from . import adb
 
 CMD_CAM_DOUBLE_PWR = 'settings put system double_tab_launch_component com.google.android.GoogleCamera/com.android.camera.CameraLauncher'
