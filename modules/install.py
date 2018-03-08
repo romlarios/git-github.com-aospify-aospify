@@ -1,3 +1,4 @@
+from tqdm import tqdm
 from . import adb, detect
 
 APK_GCAM_EXYNOS = 'apk/Camera_exynos.apk'
@@ -13,14 +14,18 @@ def install():
 	print('[*] Installing apps')
 	chipset = detect.model()
 
+	install = [
+		APK_LAUNCHER,
+		APK_EQ,
+		APK_PHONE,
+		APK_OVERLAY_SETTINGS,
+		APK_OVERLAY_SYSTEMUI
+	]
+
 	if chipset == detect.DEVICE_EXYNOS:
-		adb.install(APK_GCAM_EXYNOS)
+		install.append(APK_GCAM_EXYNOS)
 	elif chipset == detect.DEVICE_SNAPDRAGON:
-		adb.install(APK_GCAM_SD)
+		install.append(APK_GCAM_SD)
 
-	adb.install(APK_LAUNCHER)
-	adb.install(APK_EQ)
-	adb.install(APK_PHONE)
-
-	adb.install(APK_OVERLAY_SETTINGS)
-	adb.install(APK_OVERLAY_SYSTEMUI)
+	for apk in tqdm(install, desc='Installing'):
+		adb.install(apk)
