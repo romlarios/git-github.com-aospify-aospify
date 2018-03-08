@@ -19,5 +19,5 @@ def install():
 	adb.install(APK_LAUNCHER)
 	adb.install(APK_EQ)
 	adb.install(APK_PHONE)
-	
+
 	adb.install(APK_SETTINGS_OVERLAY)
