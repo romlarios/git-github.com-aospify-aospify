@@ -33,12 +33,11 @@ def exe(command, *arguments):
 		print('[!] No device found, please connect your phone. Abort.')
 		sys.exit(1)
 
-	# TODO: this parts broken
-	'''if process.returncode != 0:
+	if process.returncode != 0:
 		print('[!] ADB command failed. Abort.')
-		sys.exit(1)'''
+		sys.exit(1)
 
-	return str(process.stdout)
+	return process.stdout.decode('utf8')
 
 def kill():
 	return exe('kill-server')
@@ -48,7 +47,7 @@ def start():
 
 def shell(command):
 	return exe('shell', command)
-	
+
 def reboot():
 	return exe('reboot')
 

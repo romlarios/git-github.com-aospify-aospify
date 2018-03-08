@@ -29,14 +29,15 @@ def main():
 	splash()
 	mod.adb_check()
 	mod.device_check()
+	mod.model()
 	mod.debloat()
 	mod.install()
-	
+
 	# apply settings AFTER reboot and detect plugged in
 	mod.reboot()
 	mod.wait()
 	time.sleep(3)
-	
+
 	mod.settings()
 	mod.reboot()
 
