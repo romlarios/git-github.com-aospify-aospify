@@ -47,6 +47,9 @@ def start():
 
 def shell(command):
 	return exe('shell', command)
+	
+def reboot():
+	return exe('reboot')
 
 def push(a, b):
 	return exe('push', a, b)

@@ -31,6 +31,8 @@ def main():
 	mod.debloat()
 	mod.install()
 	
+	adb.reboot()
+	
 	# TODO: apply settings AFTER reboot
 	
 	mod.settings()
