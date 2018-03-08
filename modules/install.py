@@ -5,7 +5,7 @@ APK_GCAM_SD = 'apk/Camera_snapdragon.apk'
 APK_LAUNCHER = 'apk/Launcher.apk'
 APK_PHONE = 'apk/Phone.apk'
 APK_EQ = 'apk/Equalizer.apk'
-APK_OVERLAY_SETTINGS = 'apk/Overlay_Settings.apk'
+APK_SETTINGS_OVERLAY = 'apk/Settings_overlay.apk'
 
 # install replacement APKs
 def install():
@@ -20,4 +20,4 @@ def install():
 	adb.install(APK_EQ)
 	adb.install(APK_PHONE)
 	
-	adb.install(APK_OVERLAY_SETTINGS)
+	adb.install(APK_SETTINGS_OVERLAY)
