@@ -1,13 +1,20 @@
-from . import adb
+from . import adb, detect
 
-APK_CAMERA = 'apk/Camera.apk'
+APK_GCAM_EXYNOS = 'apk/Camera_exynos.apk'
+APK_GCAM_SD = 'apk/Camera_snapdragon.apk'
 APK_LAUNCHER = 'apk/Launcher.apk'
 APK_PHONE = 'apk/Phone.apk'
 APK_EQ = 'apk/Equalizer.apk'
 
 # install replacement APKs
 def install():
-	adb.install(APK_CAMERA)
+	chipset = detect.model()
+
+	if chipset == detect.DEVICE_EXYNOS:
+		adb.install(APK_GCAM_EXYNOS)
+	elif chipset == detect.DEVICE_SNAPDRAGON:
+		adb.install(APK_GCAM_SD)
+
 	adb.install(APK_LAUNCHER)
 	adb.install(APK_EQ)
 	adb.install(APK_PHONE)
