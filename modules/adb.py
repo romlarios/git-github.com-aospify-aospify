@@ -13,9 +13,31 @@ def adb_check():
 		sys.exit(1)
 	print('[*] ADB check passed')
 
+def device_check():
+	devices = exe('devices')
+
+	if 'unauthorized' in devices:
+		print('[!] Device unauthorized, please unlock the device and tap OK. Abort.')
+		sys.exit(1)
+	elif 'recovery' in devices:
+		print('[!] Device is in recovery, please reboot into Android. Abort.')
+		sys.exit(1)
+
+	print('[*] Device found')
+
 # command execution
 def exe(command, *arguments):
-	subprocess.check_output([ADB_PATH, command, *arguments])
+	process = subprocess.run([ADB_PATH, command, *arguments], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+	if b'error: no devices/emulators found' in process.stderr:
+		print('[!] No device found, please connect your phone. Abort.')
+		sys.exit(1)
+
+	if process.returncode != 0:
+		print('[!] ADB command failed. Abort.')
+		sys.exit(1)
+
+	return str(process.stdout)
 
 def kill():
 	return exe('kill-server')

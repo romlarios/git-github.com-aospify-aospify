@@ -20,15 +20,17 @@ def main():
 	if getattr(sys, 'frozen', False):
 		# frozen
 		os.chdir(os.path.dirname(os.path.realpath(sys.executable)))
+		# TODO: print a lot of README in steps
 	else:
 		# unfrozen
 		os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 	splash()
 	mod.adb_check()
+	mod.device_check()
 	mod.debloat()
 	mod.install()
-	mod.setup()
+	mod.settings()
 
 
 if __name__ == '__main__':
