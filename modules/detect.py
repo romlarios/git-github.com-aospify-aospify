@@ -25,7 +25,7 @@ def model():
 		choice = input('''UNSUPPORTED DEVICE! Some or all features will not work, and support will not be provided.
 Do you wish to continue? (y/n) ''')
 
-		if not choice.starts_with('y'):
+		if not choice.startswith('y'):
 			print('Aborting.')
 			sys.exit()
 
