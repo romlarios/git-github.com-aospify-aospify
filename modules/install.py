@@ -8,24 +8,27 @@ APK_PHONE = 'apk/Phone.apk'
 APK_EQ = 'apk/Equalizer.apk'
 APK_OVERLAY_SETTINGS = 'apk/Overlay_Settings.apk'
 APK_OVERLAY_SYSTEMUI = 'apk/Overlay_SystemUI.apk'
+APK_OVERLAY_ANDROID = 'apk/Overlay_Android.apk'
 
 # install replacement APKs
 def install():
 	print('[*] Installing apps')
 	chipset = detect.model()
 
-	install = [
-		APK_LAUNCHER,
-		APK_EQ,
-		APK_PHONE,
-		APK_OVERLAY_SETTINGS,
-		APK_OVERLAY_SYSTEMUI
-	]
+	install = {
+		APK_LAUNCHER: 'com.google.android.apps.nexuslauncher',
+		APK_EQ: 'com.android.musicfx',
+		APK_PHONE: 'com.google.android.dialer',
+		APK_OVERLAY_SETTINGS: 'com.android.settings.SystemMods.AOSPify',
+		APK_OVERLAY_SYSTEMUI: 'com.android.systemui.SystemMods.AOSPify',
+		APK_OVERLAY_ANDROID: 'android.SystemMods.AOSPify'
+	}
 
 	if chipset == detect.DEVICE_EXYNOS:
-		install.append(APK_GCAM_EXYNOS)
+		install[APK_GCAM_EXYNOS] = 'com.google.android.GoogleCamera'
 	elif chipset == detect.DEVICE_SNAPDRAGON:
-		install.append(APK_GCAM_SD)
+		install[APK_GCAM_SD] = 'com.google.android.GoogleCamera'
 
 	for apk in tqdm(install, desc='Installing'):
+		adb.uninstall(install[apk])
 		adb.install(apk)
