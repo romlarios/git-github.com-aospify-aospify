@@ -15,7 +15,7 @@ def adb_check():
 
 # command execution
 def exe(command, *arguments):
-	subprocess.check_output(ADB_PATH, command, *arguments)
+	subprocess.check_output([ADB_PATH, command, *arguments])
 
 def kill():
 	return exe('kill-server')
