@@ -30,6 +30,9 @@ def main():
 	mod.device_check()
 	mod.debloat()
 	mod.install()
+	
+	# TODO: apply settings AFTER reboot
+	
 	mod.settings()
 
 
