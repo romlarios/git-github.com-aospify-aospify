@@ -2,6 +2,7 @@
 
 import os
 import sys
+import time
 import modules as mod
 
 def splash():
@@ -31,11 +32,10 @@ def main():
 	mod.debloat()
 	mod.install()
 	
+	# apply settings AFTER reboot and detect plugged in
 	adb.reboot()
 	adb.wait()
-	
-	# TODO: apply settings AFTER reboot
-	
+	time.sleep(3);
 	mod.settings()
 
 
