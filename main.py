@@ -35,7 +35,7 @@ def main():
 	# apply settings AFTER reboot and detect plugged in
 	mod.reboot()
 	mod.wait()
-	time.sleep(3);
+	time.sleep(3)
 	
 	mod.settings()
 	mod.reboot()
