@@ -1,4 +1,4 @@
-from .adb import adb_check
+from .adb import adb_check, device_check
 from .debloat import debloat
 from .install import install
-from .setup import setup
+from .settings import settings
