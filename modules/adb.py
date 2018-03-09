@@ -58,8 +58,13 @@ def wait():
 def push(a, b):
 	return exe('push', a, b)
 
-def uninstall(pkg):
-	return exe('uninstall', pkg, check_return=False)
+def uninstall(pkg, keep_data=False):
+	if keep_data:
+		k = ['-k']
+	else:
+		k = []
+
+	return exe('uninstall', *k, pkg, check_return=False)
 
 def install(pkg):
 	return exe('install', pkg)
