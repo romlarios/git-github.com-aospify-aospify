@@ -12,6 +12,7 @@ CMD_QS_COLUMNS = 'settings put secure qs_tile_column 3'
 CMD_QS_ROWS = 'settings put secure qs_tile_row 3'
 CMD_QS_LAYOUT = 'settings put secure qs_tile_layout 3'
 CMD_QS_QQS = 'settings put secure sysui_qqs_count 6'
+CMD_LOCK_SHORTCUTS = 'settings put system lock_application_shortcut null'
 
 def settings():
 	print('[*] Finishing up')
@@ -28,4 +29,5 @@ def settings():
 	adb.shell(CMD_QS_ROWS)
 	adb.shell(CMD_QS_LAYOUT)
 	adb.shell(CMD_QS_QQS)
+	adb.shell(CMD_LOCK_SHORTCUTS)
 	
