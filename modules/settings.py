@@ -14,6 +14,7 @@ CMD_QS_LAYOUT = 'settings put secure qs_tile_layout 3'
 CMD_QS_QQS = 'settings put secure sysui_qqs_count 6'
 CMD_LOCK_SHORTCUTS = 'settings put system lock_application_shortcut null'
 CMD_BLACK_NAV = 'settings put global navigationbar_color -16777216'
+CMD_HELP_URL = 'settings put global online_manual_url https://github.com/tytydraco/AOSPify'
 
 def settings():
 	print('[*] Finishing up')
@@ -32,4 +33,5 @@ def settings():
 	adb.shell(CMD_QS_QQS)
 	adb.shell(CMD_LOCK_SHORTCUTS)
 	adb.shell(CMD_BLACK_NAV)
+	adb.shell(CMD_HELP_URL)
 	
