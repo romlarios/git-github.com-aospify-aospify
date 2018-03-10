@@ -25,8 +25,7 @@ def settings():
 				qs_tile_layout=3,
 				sysui_qqs_count=6)
 
-	adb.set_global(navigationbar_key_order=1,
-				navigationbar_color=-16777216,
+	adb.set_global(navigationbar_color=-16777216,
 				online_manual_url='https://aospify.github.io/',
 				flip_font_style=1,
 				dialer_default_application='com.google.android.dialer',
