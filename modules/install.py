@@ -24,7 +24,7 @@ def install():
 		APK_OVERLAY_SETTINGS: 'com.android.settings.SystemMods.AOSPify',
 		APK_OVERLAY_SYSTEMUI: 'com.android.systemui.SystemMods.AOSPify',
 		APK_OVERLAY_ANDROID: 'android.SystemMods.AOSPify',
-		APK_OVERLAY_AOD: 'com.samsung.android.app.aodservice.SystemMods.AOSPify'
+		APK_OVERLAY_AOD: 'com.samsung.android.app.aodservice.SystemMods.AOSPify',
 		APK_OVERLAY_FONT: 'com.monotype.android.font.foundation.SystemMods.GoogleProductSans'
 	}
 

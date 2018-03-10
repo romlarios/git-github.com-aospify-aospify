@@ -74,3 +74,22 @@ def mkdir(dir):
 
 def rmdir(dir):
 	return shell('rm -rf ' + dir)
+
+def setting(scope, key, value):
+	return shell('settings put {} "{}"'.format(key, value))
+
+def set_global(**pairs):
+	for key, val in pairs.items():
+		setting('global', key, str(val))
+
+def set_secure(**pairs):
+	for key, val in pairs.items():
+		setting('secure', key, str(val))
+
+def set_system(**pairs):
+	for key, val in pairs.items():
+		setting('system', key, str(val))
+
+def enable_overlays(*overlays):
+	for overlay in overlays:
+		shell('cmd overlay enable ' + overlay)
