@@ -3,7 +3,7 @@ from . import adb, detect
 
 # install replacement APKs
 def install():
-	print('[*] Installing packages')
+	print('[*] Installing')
 	chipset = detect.model()
 
 	install = {

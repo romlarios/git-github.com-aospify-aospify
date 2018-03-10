@@ -41,7 +41,7 @@ def main():
 	mod.settings()
 	mod.reboot()
 
-	print('[*] Done! Enjoy your better phone.')
+	print('[*] Done! Enjoy your better phone. You can unplug.')
 
 
 if __name__ == '__main__':
