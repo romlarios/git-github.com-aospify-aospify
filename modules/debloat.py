@@ -14,7 +14,7 @@ def debloat():
 		del debloat[len(debloat) - 1]  # final new line
 
 	# fetch enabled package list
-	enabled = adb.shell('pm list packages -e')
+	enabled = adb.shell('cmd package list packages -e')
 
 	# filter lists
 	enabled = enabled.replace('package:', '')
@@ -27,4 +27,4 @@ def debloat():
 
 	# uninstall packages
 	for pkg in tqdm(debloat, desc='Debloating'):
-		adb.shell('pm uninstall --user 0 ' + pkg)
+		adb.shell('cmd package uninstall --user 0 ' + pkg)
