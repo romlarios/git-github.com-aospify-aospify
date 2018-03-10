@@ -8,7 +8,6 @@ com.android.managedprovisioning
 com.android.providers.partnerbookmarks
 com.android.sharedstoragebackup
 com.android.stk
-com.android.wallpapercropper
 com.asurion.android.protech.att
 com.asurion.android.verizon.vms
 com.att.callprotect
