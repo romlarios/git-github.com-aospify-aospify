@@ -216,6 +216,7 @@ com.sec.android.app.DataCreate
 com.sec.android.app.desktoplauncher
 com.sec.android.app.easylauncher
 com.sec.android.app.factorykeystring
+com.sec.android.app.popupcalculator
 com.sec.android.app.hwmoduletest
 com.sec.android.app.launcher
 com.sec.android.app.magnifier
