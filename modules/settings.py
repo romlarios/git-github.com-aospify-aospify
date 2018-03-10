@@ -6,6 +6,9 @@ LIST_DELETE_SECURE = 'assets/delete_secure.txt'
 
 def settings():
 	print('[*] Finishing up')
+	
+	# grant perms to BixBack
+	adb.shell('pm grant com.draco.bixback android.permission.READ_LOGS')
 
 	# setup overlays first
 	adb.enable_overlays('com.android.settings.AOSPifyOverlays.AOSPify',
@@ -30,6 +33,10 @@ def settings():
 				flip_font_style=1,
 				dialer_default_application='com.google.android.dialer',
 				sms_default_application='com.google.android.apps.messaging')
+				
+	# check if BixBack has accessibility perms
+	current_acc_enabled = adb.shell('settings get secure enabled_accessibility_services')
+	#if 
 
 	with open(LIST_DELETE_GLOBAL, 'r') as f:
 		for key in f.readlines():

@@ -10,6 +10,7 @@ def install():
 		'Launcher': 'com.google.android.apps.nexuslauncher',
 		'Equalizer': 'com.android.musicfx',
 		'Phone': 'com.google.android.dialer',
+		'BixBack': 'com.draco.bixback',
 		'Overlay_Settings': 'com.android.settings.AOSPifyOverlays.AOSPify',
 		'Overlay_SystemUI': 'com.android.systemui.AOSPifyOverlays.AOSPify',
 		'Overlay_Android': 'android.AOSPifyOverlays.AOSPify',
