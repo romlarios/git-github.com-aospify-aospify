@@ -45,8 +45,8 @@ def kill():
 def start():
 	return exe('start-server')
 
-def shell(command):
-	return exe('shell', command)
+def shell(*commands):
+	return exe('shell', ' && '.join(commands))
 
 def reboot():
 	print('[*] Rebooting device. DO NOT UNPLUG!')

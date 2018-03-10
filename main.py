@@ -32,6 +32,7 @@ def main():
 	mod.model()
 	mod.debloat()
 	mod.install()
+	mod.media()
 
 	# apply settings AFTER reboot and detect plugged in
 	mod.reboot()
