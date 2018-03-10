@@ -11,6 +11,7 @@ def media():
 
 	adb.push(MEDIA_DIR, '/data/local/tmp/px_media')
 	adb.shell('cd /data/local/tmp',
+			'rm -rf media_ui /sdcard/{Alarms,Notifications,Ringtones}/AOSPify',
 			'mv px_media/alarms /sdcard/Alarms/AOSPify',
 			'mv px_media/notifications /sdcard/Notifications/AOSPify',
 			'mv px_media/ringtones /sdcard/Ringtones/AOSPify',
