@@ -33,7 +33,7 @@ def settings():
 				flip_font_style=1,
 				dialer_default_application='com.google.android.dialer',
 				sms_default_application='com.google.android.apps.messaging')
-		
+
 	# ensure BixBack has accessibility perms
 	acs_enabled = adb.shell('settings get secure enabled_accessibility_services').strip('\r\n')
 	if len(acs_enabled) < 5:
