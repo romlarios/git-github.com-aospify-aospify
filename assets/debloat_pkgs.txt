@@ -52,11 +52,6 @@ com.monotype.android.font.rosemary
 com.opera.max.oem
 com.osp.app.signin
 com.policydm
-com.qualcomm.atfwd
-com.qualcomm.ltebc_vzw
-com.qualcomm.qti.auth.fidocryptoservice
-com.qualcomm.qti.auth.fidosuiservice
-com.qualcomm.qti.tetherservice
 com.samsung.aasaservice
 com.samsung.advp.imssettings
 com.samsung.android.allshare.service.fileshare
