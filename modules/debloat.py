@@ -18,6 +18,7 @@ def debloat():
 
 	# filter lists
 	enabled = enabled.replace('package:', '')
+	enabled = enabled.replace('\r', '')
 	enabled = enabled.split('\n')
 	debloat = set(debloat).intersection(enabled)
 
