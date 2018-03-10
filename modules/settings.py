@@ -28,7 +28,7 @@ def settings():
 	adb.set_global(navigationbar_key_order=1,
 				navigationbar_color=-16777216,
 				online_manual_url='https://aospify.github.io/',
-				flip_font_style=15,
+				flip_font_style=13,
 				dialer_default_application='com.google.android.dialer',
 				sms_default_application='com.google.android.apps.messaging')
 
