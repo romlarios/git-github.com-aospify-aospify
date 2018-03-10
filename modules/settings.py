@@ -8,11 +8,11 @@ def settings():
 	print('[*] Finishing up')
 
 	# setup overlays first
-	adb.enable_overlays('com.android.settings.SystemMods.AOSPify',
-				'com.android.systemui.SystemMods.AOSPify',
-				'android.SystemMods.AOSPify',
-				'com.samsung.android.app.aodservice.SystemMods.AOSPify',
-				'com.monotype.android.font.foundation.SystemMods.GoogleProductSans')
+	adb.enable_overlays('com.android.settings.AOSPifyOverlays.AOSPify',
+				'com.android.systemui.AOSPifyOverlays.AOSPify',
+				'android.AOSPifyOverlays.AOSPify',
+				'com.samsung.android.app.aodservice.AOSPifyOverlays.AOSPify',
+				'com.monotype.android.font.foundation.AOSPifyOverlays.GoogleProductSans')
 
 	adb.set_system(double_tab_launch_component='com.google.android.GoogleCamera/com.android.camera.CameraLauncher',
 				lock_application_shortcut='null',

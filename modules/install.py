@@ -10,11 +10,11 @@ def install():
 		'Launcher': 'com.google.android.apps.nexuslauncher',
 		'Equalizer': 'com.android.musicfx',
 		'Phone': 'com.google.android.dialer',
-		'Overlay_Settings': 'com.android.settings.SystemMods.AOSPify',
-		'Overlay_SystemUI': 'com.android.systemui.SystemMods.AOSPify',
-		'Overlay_Android': 'android.SystemMods.AOSPify',
-		'Overlay_AOD': 'com.samsung.android.app.aodservice.SystemMods.AOSPify',
-		'Overlay_Font': 'com.monotype.android.font.foundation.SystemMods.GoogleProductSans'
+		'Overlay_Settings': 'com.android.settings.AOSPifyOverlays.AOSPify',
+		'Overlay_SystemUI': 'com.android.systemui.AOSPifyOverlays.AOSPify',
+		'Overlay_Android': 'android.AOSPifyOverlays.AOSPify',
+		'Overlay_AOD': 'com.samsung.android.app.aodservice.AOSPifyOverlays.AOSPify',
+		'Overlay_Font': 'com.monotype.android.font.foundation.AOSPifyOverlays.GoogleProductSans'
 	}
 
 	if chipset == detect.DEVICE_EXYNOS:

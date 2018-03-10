@@ -30,6 +30,7 @@ A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
  - Set your default launcher.
  - Reinstall the Google apps you want, such as Contacts, Messages, Files GO, Calendar, Clock, Inbox/Gmail, and Google Photos.
  - Make sure Phone and SMS sending and receiving works.
+ - Styalistically, it is recommended to set your clock faces (for both lock and AOD) to the single line clock. 
 
 # Disclaimer
 ```cpp
