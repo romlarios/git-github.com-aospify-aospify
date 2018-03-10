@@ -14,7 +14,7 @@ def debloat():
 		del debloat[len(debloat) - 1]  # final new line
 
 	# fetch enabled package list
-	enabled = adb.shell('pm list packages -e').replace('\r', '')
+	enabled = adb.shell('pm list packages -e')
 
 	# filter lists
 	enabled = enabled.replace('package:', '')
