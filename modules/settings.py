@@ -56,13 +56,16 @@ def settings():
 	global_lines = delete_global.read().decode('utf8').split('\n')
 	for i in global_lines:
 		adb.shell('settings delete global ' + i)
+	delete_global.close()
 		
 	delete_system = read(LIST_DELETE_SYSTEM, 'rb')
 	system_lines = delete_system.read().decode('utf8').split('\n')
 	for i in system_lines:
 		adb.shell('settings delete system ' + i)
-		
+	delete_system.close()
+	
 	delete_secure = read(LIST_DELETE_GLOBAL, 'rb')
 	secure_lines = delete_secure.read().decode('utf8').split('\n')
 	for i in secure_lines:
 		adb.shell('settings delete secure ' + i)
+	delete_secure.close()
