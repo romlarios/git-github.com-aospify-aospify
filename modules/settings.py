@@ -33,13 +33,13 @@ def settings():
 				flip_font_style=1,
 				dialer_default_application='com.google.android.dialer',
 				sms_default_application='com.google.android.apps.messaging')
-				
-	# check if BixBack has accessibility perms
-	current_acc_enabled = adb.shell('settings get secure enabled_accessibility_services')
-	if current_acc_enabled == '' or current_acc_enabled == 'null':
-		adb.shell('settings put secure enabled_accessibility_services com.draco.bixback/com.draco.bixback.AccessibilityService')
-	elif 'com.draco.bixback/com.draco.bixback.AccessibilityService' not in current_acc_enabled:
-		adb.shell('settings put secure enabled_accessibility_services ' + current_acc_enabled + ':com.draco.bixback/com.draco.bixback.AccessibilityService')
+		
+	# ensure BixBack has accessibility perms
+	acs_enabled = adb.shell('settings get secure enabled_accessibility_services').strip('\r\n')
+	if len(acs_enabled) < 5:
+		adb.set_secure(enabled_accessibility_services='com.draco.bixback/com.draco.bixback.AccessibilityService')
+	elif 'com.draco.bixback.AccessibilityService' not in acs_enabled:
+		adb.set_secure(enabled_accessibility_services=acs_enabled + ':com.draco.bixback/com.draco.bixback.AccessibilityService')
 
 	with open(LIST_DELETE_GLOBAL, 'r') as f:
 		for key in f.readlines():
