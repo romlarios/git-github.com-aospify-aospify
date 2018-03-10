@@ -1,13 +1,5 @@
 android.autoinstalls.config.samsung
 com.aetherpal.attdh.se
-com.android.backupconfirm
-com.android.bluetoothmidiservice
-com.android.carrierdefaultapp
-com.android.dreams.phototable
-com.android.managedprovisioning
-com.android.providers.partnerbookmarks
-com.android.sharedstoragebackup
-com.android.stk
 com.asurion.android.protech.att
 com.asurion.android.verizon.vms
 com.att.callprotect
@@ -39,7 +31,6 @@ com.google.android.apps.tachyon
 com.google.android.feedback
 com.google.android.gm
 com.google.android.videos
-com.google.android.webview
 com.google.android.youtube
 com.hancom.office.editor.hidden
 com.hiya.star
