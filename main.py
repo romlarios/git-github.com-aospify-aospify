@@ -30,16 +30,16 @@ def main():
 	mod.adb_check()
 	mod.device_check()
 	mod.model()
-	mod.debloat()
+	'''mod.debloat()
 	mod.install()
 
 	# apply settings AFTER reboot and detect plugged in
 	mod.reboot()
 	mod.wait()
-	time.sleep(5)
+	time.sleep(5)'''
 
 	mod.settings()
-	mod.reboot()
+	#mod.reboot()
 
 	print('[*] Done! Enjoy your better phone. You can unplug.')
 
