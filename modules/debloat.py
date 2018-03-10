@@ -11,7 +11,7 @@ def debloat():
 	with open('assets/debloat_pkgs.txt', 'rb') as f:
 		debloat = f.read().decode('utf8').split('\n')
 	if debloat[-1] == '':
-		del debloat[len(debloat) - 1] # final new line
+		del debloat[len(debloat) - 1]  # final new line
 
 	# fetch enabled package list
 	enabled = adb.shell('pm list packages -e')

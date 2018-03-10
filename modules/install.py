@@ -23,5 +23,5 @@ def install():
 		install['Camera_snapdragon'] = 'com.google.android.GoogleCamera'
 
 	for apk in tqdm(install, desc='Installing'):
-		adb.uninstall(install[apk], keep_data=True)
+		adb.uninstall('apk/' + install[apk] + '.apk', keep_data=True)
 		adb.install(apk)

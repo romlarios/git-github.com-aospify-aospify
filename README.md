@@ -26,9 +26,7 @@ A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
  - Follow the interactive prompts.
 
 # Postinstallation
- - Set your default calling app to Phone in Settings -> Apps -> More -> Default Apps -> Phone.
  - Grant the Phone app all permissions it asks for.
- - Set your default messenger.
  - Set your default launcher.
  - Reinstall the Google apps you want, such as Contacts, Messages, Files GO, Calendar, Clock, Inbox/Gmail, and Google Photos.
  - Make sure Phone and SMS sending and receiving works.
@@ -40,7 +38,7 @@ A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
  * We are not responsible for bricked devices, dead SD cards, thermonuclear
  * war, or the current economic crisis caused by you following these
  * directions. YOU are choosing to make these modificiations, and
- * if you point your finger at me for messing up your device, I will
+ * if you point your finger at us for messing up your device, we will
  * laugh at you.
  */
 ```
