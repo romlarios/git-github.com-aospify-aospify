@@ -3,8 +3,8 @@ A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
 - Warning: some features will be removed
 
 # Prerequisites
-- ADB enabled in Developer Options on your device.
-- **A 3rd-party keyboard installed** (Gboard is recommended).
+- ADB enabled in Developer Options on your device
+- **A 3rd-party keyboard installed** (Gboard is recommended)
 
 # Installation
 ## Windows
@@ -28,9 +28,9 @@ A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
 # Postinstallation
  - Grant the Phone app all permissions it asks for.
  - Set your default launcher.
- - Reinstall the Google apps you want, such as Contacts, Messages, Files GO, Calendar, Clock, Inbox/Gmail, and Google Photos.
- - Make sure Phone and SMS sending and receiving works.
- - Styalistically, it is recommended to set your clock faces (for both lock and AOD) to the single line clock. 
+ - Reinstall the Google apps you want, such as Contacts, Messages, Files GO, Calendar, Calculator, Clock, Inbox/Gmail, and Google Photos.
+ - Make sure calls and SMS work (sending and receiving).
+ - For a better looking AOD, set your clock faces (for both lock and AOD) to the single line clock.
 
 # Disclaimer
 ```cpp
