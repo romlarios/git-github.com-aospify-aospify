@@ -10,6 +10,7 @@ APK_OVERLAY_SETTINGS = 'apk/Overlay_Settings.apk'
 APK_OVERLAY_SYSTEMUI = 'apk/Overlay_SystemUI.apk'
 APK_OVERLAY_ANDROID = 'apk/Overlay_Android.apk'
 APK_OVERLAY_AOD = 'apk/Overlay_AOD.apk'
+APK_OVERLAY_FONT = 'apk/Overlay_Font.apk'
 
 # install replacement APKs
 def install():
@@ -24,6 +25,7 @@ def install():
 		APK_OVERLAY_SYSTEMUI: 'com.android.systemui.SystemMods.AOSPify',
 		APK_OVERLAY_ANDROID: 'android.SystemMods.AOSPify',
 		APK_OVERLAY_AOD: 'com.samsung.android.app.aodservice.SystemMods.AOSPify'
+		APK_OVERLAY_FONT: 'com.monotype.android.font.foundation.SystemMods.GoogleProductSans'
 	}
 
 	if chipset == detect.DEVICE_EXYNOS:
