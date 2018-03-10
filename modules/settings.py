@@ -1,6 +1,6 @@
 from . import adb
 
-AOSPIFY_MEDIA_DIR = 'assets/AOSPify_Media'
+AOSPIFY_MEDIA_DIR = 'assets/media'
 AOSPIFY_MEDIA_DEVICE_DIR = '/sdcard/AOSPify_Media'
 LIST_DELETE_GLOBAL = 'assets/delete_global.txt'
 LIST_DELETE_SYSTEM = 'assets/delete_system.txt'
@@ -8,7 +8,7 @@ LIST_DELETE_SECURE = 'assets/delete_secure.txt'
 
 def settings():
 	print('[*] Finishing up')
-	
+
 	adb.push(AOSPIFY_MEDIA_DIR, AOSPIFY_MEDIA_DEVICE_DIR)
 
 	# setup overlays first
