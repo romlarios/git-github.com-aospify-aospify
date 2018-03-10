@@ -334,3 +334,4 @@ com.wssnps
 flipboard.boxer.app
 net.aetherpal.device
 org.simalliance.openmobileapi.service
+com.samsung.upsmtheme
