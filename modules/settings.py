@@ -36,7 +36,7 @@ def settings():
 				
 	# check if BixBack has accessibility perms
 	current_acc_enabled = adb.shell('settings get secure enabled_accessibility_services')
-	if current_acc_enabled is '' or current_acc_enabled is 'null':
+	if current_acc_enabled == '' or current_acc_enabled == 'null':
 		adb.shell('settings put secure enabled_accessibility_services com.draco.bixback/com.draco.bixback.AccessibilityService')
 	elif 'com.draco.bixback/com.draco.bixback.AccessibilityService' not in current_acc_enabled:
 		adb.shell('settings put secure enabled_accessibility_services ' + current_acc_enabled + ':com.draco.bixback/com.draco.bixback.AccessibilityService')
