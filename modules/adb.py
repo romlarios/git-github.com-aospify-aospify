@@ -75,7 +75,7 @@ def rmdir(dir):
 	return shell('rm -rf ' + dir)
 
 def setting(scope, key, value):
-	return shell('settings put {} "{}"'.format(key, value))
+	return shell('settings put {} {} "{}"'.format(scope, key, value))
 
 def set_global(**pairs):
 	for key, val in pairs.items():
