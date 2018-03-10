@@ -1,0 +1,6 @@
+dropbox:data_app_anr
+dropbox:data_app_crash
+dropbox:data_app_wtf
+game_available_perfomance_mode
+game_home_enable
+game_home_hidden_games

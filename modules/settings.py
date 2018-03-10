@@ -1,5 +1,9 @@
 from . import adb
 
+LIST_DELETE_GLOBAL = 'assets/delete_global.txt'
+LIST_DELETE_SYSTEM = 'assets/delete_system.txt'
+LIST_DELETE_SECURE = 'assets/delete_secure.txt'
+
 CMD_ENABLE_OVERLAY_SETTINGS = 'cmd overlay enable com.android.settings.SystemMods.AOSPify'
 CMD_ENABLE_OVERLAY_SYSTEMUI = 'cmd overlay enable com.android.systemui.SystemMods.AOSPify'
 CMD_ENABLE_OVERLAY_ANDROID = 'cmd overlay enable android.SystemMods.AOSPify'
@@ -20,6 +24,7 @@ CMD_DISABLE_INTELLIGENT_SLEEP = 'settings put system intelligent_sleep_mode 0'
 CMD_ENABLE_FINGER_GESTURES = 'settings put system fingerprint_gesture_quick 1'
 CMD_SET_FONT = 'settings put global flip_font_style 15'
 CMD_SET_DEFAULT_DIALER = 'settings put global dialer_default_application com.google.android.dialer'
+CMD_SET_DEFAULT_SMS = 'settings put global sms_default_application com.google.android.apps.messaging'
 
 
 def settings():
@@ -45,3 +50,19 @@ def settings():
 	adb.shell(CMD_ENABLE_FINGER_GESTURES)
 	adb.shell(CMD_SET_FONT)
 	adb.shell(CMD_SET_DEFAULT_DIALER)
+	adb.shell(CMD_SET_DEFAULT_SMS)
+	
+	delete_global = read(LIST_DELETE_GLOBAL, 'rb')
+	global_lines = delete_global.read().decode('utf8').split('\n')
+	for i in global_lines:
+		adb.shell('settings delete global ' + i)
+		
+	delete_system = read(LIST_DELETE_SYSTEM, 'rb')
+	system_lines = delete_system.read().decode('utf8').split('\n')
+	for i in system_lines:
+		adb.shell('settings delete system ' + i)
+		
+	delete_secure = read(LIST_DELETE_GLOBAL, 'rb')
+	secure_lines = delete_secure.read().decode('utf8').split('\n')
+	for i in secure_lines:
+		adb.shell('settings delete secure ' + i)

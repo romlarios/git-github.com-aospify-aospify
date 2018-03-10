@@ -1,0 +1,6 @@
+game_available_perfomance_mode
+game_home_enable
+game_home_hidden_games
+pref_setting_gamelauncher_key_oob_disabling
+pref_setting_gamelauncher_need_fresh_start
+verizonwireless_store_demo_mode

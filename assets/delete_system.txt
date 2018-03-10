@@ -1,0 +1,17 @@
+easy_mode_camera
+easy_mode_contacts
+easy_mode_email
+easy_mode_gallery
+easy_mode_internet
+easy_mode_messages
+easy_mode_music
+easy_mode_splanner
+easy_mode_switch
+easy_mode_video
+edge_lighting_wallpaper_color
+edge_lighting_wallpaper_color
+hdr_effect
+hdr_effect_intensity
+one_handed_op_show_hard_keys
+one_handed_op_wakeup_type
+onehand_direction
