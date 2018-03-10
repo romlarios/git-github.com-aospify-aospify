@@ -19,6 +19,7 @@ CMD_HELP_URL = 'settings put global online_manual_url https://github.com/tytydra
 CMD_DISABLE_INTELLIGENT_SLEEP = 'settings put system intelligent_sleep_mode 0'
 CMD_ENABLE_FINGER_GESTURES = 'settings put system fingerprint_gesture_quick 1'
 CMD_SET_FONT = 'settings put global flip_font_style 15'
+CMD_SET_DEFAULT_DIALER = 'settings put global dialer_default_application com.google.android.dialer'
 
 
 def settings():
@@ -43,3 +44,4 @@ def settings():
 	adb.shell(CMD_DISABLE_INTELLIGENT_SLEEP)
 	adb.shell(CMD_ENABLE_FINGER_GESTURES)
 	adb.shell(CMD_SET_FONT)
+	adb.shell(CMD_SET_DEFAULT_DIALER)
