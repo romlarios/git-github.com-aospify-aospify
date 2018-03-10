@@ -4,6 +4,7 @@ CMD_ENABLE_OVERLAY_SETTINGS = 'cmd overlay enable com.android.settings.SystemMod
 CMD_ENABLE_OVERLAY_SYSTEMUI = 'cmd overlay enable com.android.systemui.SystemMods.AOSPify'
 CMD_ENABLE_OVERLAY_ANDROID = 'cmd overlay enable android.SystemMods.AOSPify'
 CMD_ENABLE_OVERLAY_AOD = 'cmd overlay enable com.samsung.android.app.aodservice.SystemMods.AOSPify'
+CMD_ENABLE_OVERLAY_FONT = 'cmd overlay enable com.monotype.android.font.foundation.SystemMods.GoogleProductSans'
 
 CMD_CAM_DOUBLE_PWR = 'settings put system double_tab_launch_component com.google.android.GoogleCamera/com.android.camera.CameraLauncher'
 CMD_NAVBAR_RESET = 'settings put secure sysui_nav_bar null'
@@ -17,6 +18,8 @@ CMD_BLACK_NAV = 'settings put global navigationbar_color -16777216'
 CMD_HELP_URL = 'settings put global online_manual_url https://github.com/tytydraco/AOSPify'
 CMD_DISABLE_INTELLIGENT_SLEEP = 'settings put system intelligent_sleep_mode 0'
 CMD_ENABLE_FINGER_GESTURES = 'settings put system fingerprint_gesture_quick 1'
+CMD_SET_FONT = 'settings put global flip_font_style 15'
+
 
 def settings():
 	print('[*] Finishing up')
@@ -25,6 +28,7 @@ def settings():
 	adb.shell(CMD_ENABLE_OVERLAY_SYSTEMUI)
 	adb.shell(CMD_ENABLE_OVERLAY_ANDROID)
 	adb.shell(CMD_ENABLE_OVERLAY_AOD)
+	adb.shell(CMD_ENABLE_OVERLAY_FONT)
 	
 	adb.shell(CMD_CAM_DOUBLE_PWR)
 	adb.shell(CMD_NAVBAR_RESET)
@@ -38,3 +42,4 @@ def settings():
 	adb.shell(CMD_HELP_URL)
 	adb.shell(CMD_DISABLE_INTELLIGENT_SLEEP)
 	adb.shell(CMD_ENABLE_FINGER_GESTURES)
+	adb.shell(CMD_SET_FONT)
