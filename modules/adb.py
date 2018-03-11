@@ -27,7 +27,8 @@ def device_check():
 
 # command execution
 def exe(command, *arguments, check_return=True):
-	process = subprocess.run([ADB_PATH, command, *arguments], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	run_args = [ADB_PATH, command, *arguments]
+	process = subprocess.run(run_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 	if b'error: no devices/emulators found' in process.stderr:
 		print('[!] No device found, please connect your phone. Abort.')
@@ -35,6 +36,7 @@ def exe(command, *arguments, check_return=True):
 
 	if check_return and process.returncode != 0:
 		print('[!] ADB command failed. Abort.')
+		print(f'[!] Command: {" ".join(run_args)}')
 		sys.exit(1)
 
 	return process.stdout.decode('utf8')

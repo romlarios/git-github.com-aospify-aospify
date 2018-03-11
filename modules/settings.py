@@ -36,7 +36,7 @@ def settings():
 
 	# ensure BixBack has accessibility perms
 	acs_enabled = adb.shell('settings get secure enabled_accessibility_services').strip('\r\n')
-	if len(acs_enabled) < 5:
+	if acs_enabled in ['', 'null']:
 		adb.set_secure(enabled_accessibility_services='com.draco.bixback/com.draco.bixback.AccessibilityService')
 	elif 'com.draco.bixback.AccessibilityService' not in acs_enabled:
 		adb.set_secure(enabled_accessibility_services=acs_enabled + ':com.draco.bixback/com.draco.bixback.AccessibilityService')
