@@ -1,6 +1,15 @@
 # AOSPify
 A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
-- Warning: some features will be removed
+
+# Lost Features
+With the disabling of many packages, here is what you will lose:
+- One-Handed Mode
+- Easy Mode
+- Wifi Calling
+- VOLTE
+- Samsung Account Backup
+- Samsung Pay
+- Knox (and any SDK dependant apps like BK Disabler)
 
 # Prerequisites
 - ADB enabled in Developer Options on your device
