@@ -23,7 +23,7 @@ def media():
 				desk_dock_sound=_snd('Dock'),
 				desk_undock_sound=_snd('Undock'),
 				lock_sound=_snd('Lock'),
-				low_battery_sound=_snd('LowBattery'),
+				#low_battery_sound=_snd('LowBattery'), # forbidden location (/data)
 				trusted_sound=_snd('Trusted'),
 				unlock_sound=_snd('Unlock'),
 				wireless_charging_started_sound=_snd('WirelessChargingStarted'))
