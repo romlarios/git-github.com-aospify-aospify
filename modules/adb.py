@@ -65,7 +65,7 @@ def uninstall(pkg, keep_data=False):
 	if keep_data:
 		k = ' -k'
 
-	return exe('shell', 'cmd package uninstall{} {}'.format(k, pkg), check_return=False)
+	return exe('shell', 'cmd package uninstall {} {}'.format(k, pkg), check_return=False)
 
 def install(pkg):
 	return exe('install', pkg)
