@@ -22,8 +22,7 @@ def settings():
 				intelligent_sleep_mode=0,
 				fingerprint_gesture_quick=1)
 
-	adb.set_secure(sysui_nav_bar='null',
-				qs_tile_column=3,
+	adb.set_secure(qs_tile_column=3,
 				qs_tile_row=3,
 				qs_tile_layout=3,
 				sysui_qqs_count=6)
