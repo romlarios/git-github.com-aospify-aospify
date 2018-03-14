@@ -331,3 +331,6 @@ flipboard.boxer.app
 net.aetherpal.device
 org.simalliance.openmobileapi.service
 com.samsung.upsmtheme
+com.samsung.android.bixby.agent
+com.samsung.android.app.spage
+
