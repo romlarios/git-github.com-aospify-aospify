@@ -27,7 +27,4 @@ def debloat():
 
 	# uninstall packages
 	for pkg in tqdm(debloat, desc='Debloating'):
-		adb.shell('pm uninstall --user 0 ' + pkg)
-		
-	# disable packages
-	#adb.shell('pm package disable-user com.samsung.android.app.spage')
+		adb.uninstall('--user 0 ' + pkg)
