@@ -1,6 +1,34 @@
 # AOSPify
 A way to get an AOSP experience on Galaxy S8/S8+/Note 8, without root.
 
+# Features
+- All autonomous
+- No root required
+- Unbelievable battery life (allow full cycle to recalibrate)
+- Debloat 99% of packages disabled
+- Debloat secure settings
+- Settings Pixel themed (based on pixel)
+- SystemUI Pixel themed
+- Framework-res Pixel themed
+- AOD themed Pixel (set to clock 2 under Security)
+- Google Product Sans font
+- Google Camera
+- Google Dialer (hand-ported; latest version)
+- Google Equalizer
+- Google Camera (Exynos patched)
+- Bixby Remapper included (uninstallable; lightweight)
+- Quick Settings rows and columns themed to Pixel\
+- Nav bar color set to black
+- Nav bar set to Oreo AOSP icons
+- Settings Help button set to AOSPify website
+- Sets default dialer and sms applications
+- Pixel UI sounds (lock, unlock, etc)
+- Added Pixel Alarms, Ringtones, Notifications sounds
+- Resents close all in the top right
+- Emergency button removed border
+- Quick Settings page indicator Pixel
+- Remove Samsung charging animations
+
 # Lost Features
 With the disabling of many packages, here is what you will lose:
 - One-Handed Mode
