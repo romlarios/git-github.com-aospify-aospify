@@ -62,10 +62,10 @@ def push(a, b):
 
 def uninstall(pkg, keep_data=False):
 	k = ''
-	if keep_data:
-		k = ' -k'
+	#if keep_data:
+	#	k = ' -k'
 
-	return exe('shell', 'cmd package uninstall {} {}'.format(k, pkg), check_return=False)
+	return exe('shell', 'pm uninstall {} {}'.format(k, pkg), check_return=False)
 
 def install(pkg):
 	return exe('install', pkg)
