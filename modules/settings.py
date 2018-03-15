@@ -6,7 +6,7 @@ LIST_DELETE_SECURE = 'assets/delete_secure.txt'
 
 def settings():
 	print('[*] Finishing up')
-	
+
 	# grant perms to BixBack
 	adb.shell('pm grant com.draco.bixback android.permission.READ_LOGS')
 
@@ -18,6 +18,7 @@ def settings():
 				'com.monotype.android.font.foundation.AOSPifyOverlays.GoogleProductSans')
 
 	adb.set_system(double_tab_launch_component='com.google.android.GoogleCamera/com.android.camera.CameraLauncher',
+				double_tab_launch=3,
 				lock_application_shortcut='null',
 				intelligent_sleep_mode=0,
 				fingerprint_gesture_quick=1)
