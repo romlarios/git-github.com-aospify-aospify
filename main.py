@@ -3,28 +3,29 @@
 import os
 import sys
 import time
+import inspect
 import modules as mod
 
 def splash():
 	print('''
  █████╗  ██████╗ ███████╗██████╗ ██╗███████╗██╗   ██╗
 ██╔══██╗██╔═══██╗██╔════╝██╔══██╗██║██╔════╝╚██╗ ██╔╝
-███████║██║   ██║███████╗██████╔╝██║█████╗   ╚████╔╝ 
-██╔══██║██║   ██║╚════██║██╔═══╝ ██║██╔══╝    ╚██╔╝  
-██║  ██║╚██████╔╝███████║██║     ██║██║        ██║   
-╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝        ╚═╝   
+███████║██║   ██║███████╗██████╔╝██║█████╗   ╚████╔╝
+██╔══██║██║   ██║╚════██║██╔═══╝ ██║██╔══╝    ╚██╔╝
+██║  ██║╚██████╔╝███████║██║     ██║██║        ██║
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝        ╚═╝
 --------------------------------------
 Samsung Root-less AOSP Experience
 Made by: tytydraco, kdrag0n''')
 
+packaged = False
+
 def main():
-	if getattr(sys, 'frozen', False):
-		# frozen
-		os.chdir(os.path.dirname(os.path.realpath(sys.executable)))
-		# TODO: print a lot of README in steps
-	else:
-		# unfrozen
-		os.chdir(os.path.dirname(os.path.realpath(__file__)))
+	if not hasattr(sys.modules[__name__], '__file__'):
+		__file__ = sys.executable
+		packaged = True # TODO: print some README here
+
+	os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 	splash()
 	mod.adb_check()
