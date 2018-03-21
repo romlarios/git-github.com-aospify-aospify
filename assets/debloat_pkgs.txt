@@ -228,7 +228,6 @@ com.sec.android.app.ringtoneBR
 com.sec.android.app.safetyassurance
 com.sec.android.app.samsungapps
 com.sec.android.app.sbrowser
-com.sec.android.app.SecSetupWizard
 com.sec.android.app.servicemodeapp
 com.sec.android.app.setupwizard
 com.sec.android.app.shealth
